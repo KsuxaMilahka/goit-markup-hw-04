@@ -56,9 +56,9 @@ body {
 /* Header*/
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    background-image: linear-gradient(0 1px 6px 0 rgba(46, 47, 66, 0.08),
-            0 1px 1px 0 rgba(46, 47, 66, 0.16),
-            0 2px 1px 0 rgba(46, 47, 66, 0.08));
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -169,9 +169,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url("../images/people-office\ 1.jpg");
+            rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero .container {
@@ -207,6 +208,7 @@ body {
     border: none;
     margin-left: auto;
     margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-service-btn:hover,
@@ -257,6 +259,7 @@ body {
     display: flex;
     width: 264px;
     height: 112px;
+    margin-bottom: 8px;
 }
 
 
@@ -268,7 +271,6 @@ body {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    margin-top: 8px;
     max-width: 264px;
     margin-right: auto;
     margin-left: auto;
@@ -311,11 +313,15 @@ body {
     background-color: #ffffff;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-box {
     border-radius: 0px 0px 4px 4px;
     padding: 32px 0;
+
 }
 
 
@@ -344,10 +350,15 @@ body {
     margin-bottom: 32px;
 }
 
+.team-social-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+
 .team-social-list-link {
     fill: white;
-    height: 40px;
-    width: 40px;
+    width: 100%;
     border-radius: 50%;
     background-color: #4d5ae5;
     justify-content: center;
@@ -358,7 +369,7 @@ body {
 
 .team-social-list-link:hover,
 .team-social-list-link:focus {
-    background-color: #31D0AA;
+    background-color: #404bbf;
 }
 
 /*Section 4 portfolio*/
@@ -384,6 +395,7 @@ body {
 
 .portfolio-list-item {
     background-color: #ffffff;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -413,7 +425,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.portfolio-overlay {
+.portfolio-overlay-text {
     background-color: #4d5ae5;
     font-size: 16px;
     line-height: 1.5;
@@ -430,8 +442,13 @@ body {
     padding: 40px 32px 164px 32px;
 }
 
-.portfolio-list-item:hover .portfolio-overlay {
+.portfolio-list-item:hover .portfolio-overlay-text {
     transform: translateY(0%);
+}
+
+.portfolio-list-item:hover {
+    transform: translateY(0%);
+    box-shadow: зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /*Footer*/
@@ -443,6 +460,11 @@ body {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
+}
+
+.footer-logo-text {
+    margin-right: 120px;
 }
 
 
@@ -471,15 +493,7 @@ body {
 }
 
 .footer-social-media {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #fff;
-    justify-content: space-between;
-    align-items: center;
     max-width: 208px;
-    margin-left: 120px;
 }
 
 .footer-social-list {
@@ -489,6 +503,15 @@ body {
 
 .footer-social-media-title {
     margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 
 .team-social-list-link {
