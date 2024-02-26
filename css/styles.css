@@ -321,7 +321,6 @@ body {
 .team-list-box {
     border-radius: 0px 0px 4px 4px;
     padding: 32px 0;
-
 }
 
 
@@ -357,6 +356,7 @@ body {
 }
 
 .team-social-list-link {
+
     height: 100%;
     width: 100%;
     background-color: #4d5ae5;
@@ -372,7 +372,7 @@ body {
 }
 
 .team-social-icon {
-    fill: white;
+    fill: #f4f4fd;
 }
 
 /*Section 4 portfolio*/
