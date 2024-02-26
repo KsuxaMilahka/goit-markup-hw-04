@@ -356,14 +356,8 @@ body {
     border-radius: 50%;
 }
 
-.team-social-list-item:hover,
-.team-social-list-item:focus {
-    background-color: #404bbf;
-}
-
-
 .team-social-list-link {
-
+    height: 100%;
     width: 100%;
     background-color: #4d5ae5;
     justify-content: center;
