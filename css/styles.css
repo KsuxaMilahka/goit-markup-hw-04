@@ -288,9 +288,6 @@ body {
 
 .team {
     background-color: #f4f4fd;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .team-title {
@@ -346,7 +343,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 24px;
-    margin-bottom: 32px;
+
 }
 
 .team-social-list-link {
@@ -391,16 +388,18 @@ body {
     row-gap: 48px;
 }
 
-.portfolio-list:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 .portfolio-list-item {
     background-color: #ffffff;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.portfolio-list-item:hover {
+    transform: translateY(0%);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-list-item:hover .portfolio-overlay-text {
+    transform: translateY(0%);
 }
 
 .portfolio-img {
@@ -450,14 +449,9 @@ body {
     padding: 40px 32px;
 }
 
-.portfolio-list-item:hover .portfolio-overlay-text {
-    transform: translateY(0%);
-}
 
-.portfolio-list-item:hover {
-    transform: translateY(0%);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
+
 
 /*Footer*/
 .page-footer {
